@@ -41,6 +41,3 @@ router.delete("/:userId", verifyUser, deleteUser);
 
 export default router;
 
-// Admin Daniel - 62e3bd1bde39510c0a65e9fa
-// shadow - 62e436670bd13b841663009b
-// shadon - 62e30f7abe66583572d52a23

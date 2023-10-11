@@ -12,6 +12,7 @@ export const register = async (req, res, next) => {
 			username: req.body.username,
 			email: req.body.email,
 			password: hashPassword,
+			isAdmin:req.body.isAdmin
 		});
 
 		await newUser.save();
@@ -39,7 +40,7 @@ export const login = async (req, res, next) => {
 			{ id: user._id, isAdmin: user.isAdmin },
 			process.env.JWT_SECRET
 		);
-		console.log(JWT_SECRET)
+		
 		res.cookie("access_token", token, { httpOnly: true })
 			.status(200)
 			.json({ ...otherDetails });

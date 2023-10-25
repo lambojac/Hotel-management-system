@@ -5,7 +5,7 @@
 	"main": "server.js",
 	"type": "module",
 	"scripts": {
-		"start:dev": "nodemon server",
+	"start:dev": "nodemon server",
     "start": "node server"
 	},
 	"author": "kehinde adamo",
